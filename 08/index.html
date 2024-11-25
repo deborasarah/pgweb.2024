@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>JavaScript Array-01</title>
+    <script>
+
+       let linguagens = Array();
+
+       linguagens[0]='Dart';
+       linguagens[1]='PHP';
+       linguagens[2]='Java';
+       linguagens[3]='Pyton';
+       linguagens[4]='Perl';
+       linguagens[5]='Ruby on Rails';
+       linguagens[6]='C ++';
+
+
+       function mostrarListaLinguagens(){
+        const container = document.getElementById('minhaDiv');
+            for (var i =0; i < linguagens.length; i++){
+                var tag= '<h5>' + i + '-' + linguagens [i] + '</h5>';
+                    container.innerHTML += tag;
+                } 
+
+       }
+    
+
+       function posicaoLinguagens(){
+        var indice = prompt('Qual posição da lista deseja consultar?');
+        alert(linguagens[indice]);
+
+       }
+    </script>
+
+</head>
+
+    <body>
+
+        <h1>Array de Linguagens</h1>
+        <button onclick="mostrarListaLinguagens()">Criar Array</button> <br> <br>
+        <button onclick="posicaoLinguagens()">Posição no Array</button>
+        <div id="minhaDiv"></div>
+
+    </body>
+
+
+</html> <br> <br>
+<hr>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>JavaScript Array-01</title>
+    <script>
+
+       let frutas = Array();
+
+       frutas[0]='Melão';
+       frutas[1]='Melancia';
+       frutas[2]='Uva';
+       frutas[3]='Morango';
+       frutas[4]='Pera';
+       frutas[5]='Laranja';
+       frutas[6]='Kiwi';
+
+
+       function mostrarListaFrutas(){
+        const container = document.getElementById('minhaDiv1');
+            for (var i =0; i < frutas.length; i++){
+                var tag= '<h5>' + i + '-' + frutas [i] + '</h5>';
+                    container.innerHTML += tag;
+                } 
+
+       }
+    
+
+       function posicaoFrutas(){
+        var indice = prompt('Qual posição da lista deseja consultar?');
+        alert(frutas[indice]);
+
+       }
+    </script>
+
+</head>
+
+    <body>
+
+        <h1>Array de Frutas</h1>
+        <button onclick="mostrarListaFrutas()">Criar Array</button> <br> <br>
+        <button onclick="posicaoFrutas()">Posição no Array</button>
+        <div id="minhaDiv1"></div>
+
+    </body>
+
+
+</html>
